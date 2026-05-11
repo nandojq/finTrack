@@ -1,0 +1,653 @@
+{
+  "_comment": "Keys are lowercase merchant names. Prefix matching is used — 'multipharma' matches 'multipharma 422'.",
+  "colruyt": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "proxy delhaize": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "delhaize": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "lidl": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "carrefour": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "aldi": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "albert heijn": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "spar": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "multipharma": {
+    "type": "Expense",
+    "category": "Health & Wellbeing",
+    "subcategory": "Pharmacy"
+  },
+  "pharmacie houwaert": {
+    "type": "Expense",
+    "category": "Health & Wellbeing",
+    "subcategory": "Pharmacy"
+  },
+  "pharmacie": {
+    "type": "Expense",
+    "category": "Health & Wellbeing",
+    "subcategory": "Pharmacy"
+  },
+  "apotheek": {
+    "type": "Expense",
+    "category": "Health & Wellbeing",
+    "subcategory": "Pharmacy"
+  },
+  "dental expert": {
+    "type": "Expense",
+    "category": "Health & Wellbeing",
+    "subcategory": "Doctor & Specialists"
+  },
+  "eurocare medical": {
+    "type": "Expense",
+    "category": "Health & Wellbeing",
+    "subcategory": "Doctor & Specialists"
+  },
+  "la mutualite neutre": {
+    "type": "Expense",
+    "category": "Health & Wellbeing",
+    "subcategory": "Health Insurance"
+  },
+  "mutualite": {
+    "type": "Expense",
+    "category": "Health & Wellbeing",
+    "subcategory": "Health Insurance"
+  },
+  "stib": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Public Transport"
+  },
+  "mivb": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Public Transport"
+  },
+  "sncb": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Public Transport"
+  },
+  "nmbs": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Public Transport"
+  },
+  "de lijn": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Public Transport"
+  },
+  "easypark": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Parking & Tolls"
+  },
+  "easypark b.v.b.a": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Parking & Tolls"
+  },
+  "interparking": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Parking & Tolls"
+  },
+  "q-park": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Parking & Tolls"
+  },
+  "uber": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Occasional Transport"
+  },
+  "bolt": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Occasional Transport"
+  },
+  "cambio": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Occasional Transport"
+  },
+  "vivaqua": {
+    "type": "Expense",
+    "category": "Housing & Utilities",
+    "subcategory": "Water"
+  },
+  "totalenergies": {
+    "type": "Expense",
+    "category": "Housing & Utilities",
+    "subcategory": "Electricity & Gas"
+  },
+  "totalenergies pg belgium sa": {
+    "type": "Expense",
+    "category": "Housing & Utilities",
+    "subcategory": "Electricity & Gas"
+  },
+  "engie": {
+    "type": "Expense",
+    "category": "Housing & Utilities",
+    "subcategory": "Electricity & Gas"
+  },
+  "luminus": {
+    "type": "Expense",
+    "category": "Housing & Utilities",
+    "subcategory": "Electricity & Gas"
+  },
+  "mobile vikings": {
+    "type": "Expense",
+    "category": "Housing & Utilities",
+    "subcategory": "Internet & Phone"
+  },
+  "proximus": {
+    "type": "Expense",
+    "category": "Housing & Utilities",
+    "subcategory": "Internet & Phone"
+  },
+  "orange": {
+    "type": "Expense",
+    "category": "Housing & Utilities",
+    "subcategory": "Internet & Phone"
+  },
+  "telenet": {
+    "type": "Expense",
+    "category": "Housing & Utilities",
+    "subcategory": "Internet & Phone"
+  },
+  "le coq bruxelles": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "yemeni": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "bar tapas 177": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "deliveroo": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Takeaway & Delivery"
+  },
+  "uber eats": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Takeaway & Delivery"
+  },
+  "claude.ai subscription": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Service Subscriptions"
+  },
+  "netflix": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Service Subscriptions"
+  },
+  "spotify": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Service Subscriptions"
+  },
+  "apple": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Service Subscriptions"
+  },
+  "google": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Service Subscriptions"
+  },
+  "bozar": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Events"
+  },
+  "ticketswap": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Events"
+  },
+  "ryanair": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "ryanair dac": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "booking.com": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "airbnb": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "toyota motor europe nv": {
+    "type": "Income",
+    "category": "Income",
+    "subcategory": "Salary & Bonuses"
+  },
+  "toyota motor europe": {
+    "type": "Income",
+    "category": "Income",
+    "subcategory": "Salary & Bonuses"
+  },
+  "kbc bank charge": {
+    "type": "Financial Obligation",
+    "category": "Financial Obligation",
+    "subcategory": "Bank Fees & Charges"
+  },
+  "atm withdrawal": {
+    "type": "Financial Obligation",
+    "category": "Financial Obligation",
+    "subcategory": "Bank Fees & Charges"
+  },
+  "automatic savings": {
+    "type": "Transfer",
+    "category": "Transfer",
+    "subcategory": "Savings Deposit"
+  },
+  "jorge ques fernando": {
+    "type": "Transfer",
+    "category": "Transfer",
+    "subcategory": "Internal Transfer"
+  },
+  "rené richard": {
+    "type": "Expense",
+    "category": "Housing & Utilities",
+    "subcategory": "Rent"
+  },
+  "alliu armando": {
+    "type": "Income",
+    "category": "Income",
+    "subcategory": "Refunds & Reimbursements"
+  },
+  "neofollics hair technology": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Personal Care"
+  },
+  "bol.com": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Other Shopping"
+  },
+  "jordi p2p mobile with kbc brussels debit card 5127 88xx xxxx 0292 cardholder: jorge ques fernando": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "flexispot gmbh": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Electronics & Gadgets"
+  },
+  "rentalcars.com": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Occasional Transport"
+  },
+  "vater analena": {
+    "type": "Income",
+    "category": "Income",
+    "subcategory": "Refunds & Reimbursements"
+  },
+  "anabl sprl": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Other Shopping"
+  },
+  "le pantin": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "la piola pizza": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "dhr arne fischer buhner": {
+    "type": "Income",
+    "category": "Income",
+    "subcategory": "Refunds & Reimbursements"
+  },
+  "anna tango canete": {
+    "type": "Income",
+    "category": "Income",
+    "subcategory": "Refunds & Reimbursements"
+  },
+  "couronne flowers": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Other Shopping"
+  },
+  "mullvad vpn ab se400 14 gothenburg with kbc brussels debit card 5127 88xx xxxx 0292 cardholder: jorge ques fernando info from the retailer:7j13rx8 vpn 4exrbe8jbs": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Service Subscriptions"
+  },
+  "analena vater": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Electronics & Gadgets"
+  },
+  "crf exp st josse": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "maria rodriguez riveros": {
+    "type": "Income",
+    "category": "Income",
+    "subcategory": "Refunds & Reimbursements"
+  },
+  "bbp bailli": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "waml": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "bindar investement  bv": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "buencoco slu": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Personal Care"
+  },
+  "aws emea lul2338 luxembourg with kbc brussels debit card 5127 88xx xxxx 0292 cardholder: jorge ques fernando": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Service Subscriptions"
+  },
+  "la pubilla del taulat": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "arbitrade ae barcelona": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "el nou cafeti": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "tidal sese-211 19 malmo with m4m - mdes for merchants 5127 88xx xxxx 0292 virtual card number for contactless: 5354 00xx xxxx 5218 cardholder: jorge ques fernando": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Service Subscriptions"
+  },
+  "palau martorell": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Arts & Culture"
+  },
+  "llibreria sant jordi": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Arts & Culture"
+  },
+  "tienda palau martorell": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Arts & Culture"
+  },
+  "bareto olimpic": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "bar canyi": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "menjador del centre": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "delijn 8lnyhhrk 26feb": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Public Transport"
+  },
+  "tmb bus transit": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Public Transport"
+  },
+  "walkthrough ta": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Public Transport"
+  },
+  "supermercat bon preu s": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "l ovella": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "blocdistrict": {
+    "type": "Expense",
+    "category": "Health & Wellbeing",
+    "subcategory": "Gym & Sports"
+  },
+  "metro barcelona": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Public Transport"
+  },
+  "toyota zaventem": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "toyota evere": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "tme head office": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "alsa internet": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "best carwash bv": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Bike Maintenance"
+  },
+  "best c 4": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Other Shopping"
+  },
+  "het depot": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Events"
+  },
+  "ccv*parkeergarage enee": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Parking & Tolls"
+  },
+  "alhambra cyberpac": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Events"
+  },
+  "transavia": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "rclub schuman": {
+    "type": "Expense",
+    "category": "Health & Wellbeing",
+    "subcategory": "Doctor & Specialists"
+  },
+  "correcting entry": {
+    "type": "Income",
+    "category": "Income",
+    "subcategory": "Refunds & Reimbursements"
+  },
+  "fresh med": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "brico 3309 meiser": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Household Supplies"
+  },
+  "les ann?es lumi?re spr": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Arts & Culture"
+  },
+  "noje": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "al-bay-decor": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Household Supplies"
+  },
+  "le coin bazar": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "le palace asbl": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Events"
+  },
+  "jennifer aberle": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "apprentus gbec1v 4pw london with kbc brussels debit card 5127 88xx xxxx 0292 cardholder: jorge ques fernando": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Hobbies & Activities"
+  },
+  "cults3d": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Other Shopping"
+  },
+  "thomann gmbh": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Arts & Culture"
+  },
+  "ikea zaventem-store": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Household Supplies"
+  },
+  "ms* latroupegrandplac": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "sumup  *moncer": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Other Shopping"
+  },
+  "muriel": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "nime two": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "ikea belgium nv": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Household Supplies"
+  },
+  "briancallimusic": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Arts & Culture"
+  },
+  "daniel jones, eimear jones": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  }
+}
