@@ -10,7 +10,8 @@
       "mcp__claude_ai_Notion__notion-update-page",
       "Bash(git add *)",
       "Bash(git mv *)",
-      "Bash(ls *)"
+      "Bash(ls *)",
+      "Bash(git commit *)"
     ]
   }
 }

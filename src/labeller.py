@@ -142,7 +142,7 @@ def _label_one(tx: dict, rules: dict) -> dict:
             'subcategory': hit['subcategory'],
             'labelling_source': 'rule',
             'confidence': None,
-            'reviewed': 0,
+            'reviewed': 1,
         }
 
     # Layer 2 — Ollama LLM

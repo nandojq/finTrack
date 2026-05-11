@@ -576,7 +576,8 @@ if selected_rows:
             st.markdown(f"**Merchant:** {row.get('merchant', '—')}")
             st.markdown(f"**Date:** {row.get('date', '—')}")
             st.markdown(f"**Amount:** €{row.get('amount', 0):.2f}")
-            st.markdown(f"**Account:** {row.get('account', '—')}")
+            full = df_with_id.iloc[idx] if idx < len(df_with_id) else {}
+            st.markdown(f"**Account:** {full.get('account', '—')}")
             if 'description' in df_with_id.columns and idx < len(df_with_id):
                 desc = df_with_id.iloc[idx].get('description', '—')
                 st.markdown(f"**Description:** {str(desc)[:120]}")

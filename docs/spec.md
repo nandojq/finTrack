@@ -15,15 +15,15 @@ The output is a clean, well-structured SQLite database — queryable directly by
 ```
 KBC CSV Export (one or more accounts)
         ↓
-  [ ingest.py ]
+  [ src/ingest.py ]
   Parse → Normalise → Deduplicate
         ↓
-  [ labeller.py ]
+  [ src/labeller.py ]
   rules.json cache → Ollama LLM fallback (+ few-shot corrections context)
         ↓
   fintrack.db (SQLite)
         ↓
-  [ app.py — Streamlit UI ]
+  [ src/app.py — Streamlit UI ]
   Import · Transaction table · Row detail + relabelling · Learn
         ↓
   Clean database → queryable by Claude / any LLM
@@ -44,7 +44,6 @@ fintrack/
 ├── docs/               # Full specification (this folder)
 ├── rules.json          # Merchant → type/category/subcategory cache
 ├── .env                # Secrets and personal config (never committed)
-├── .env.example        # Template for .env
 └── fintrack.db         # SQLite database (gitignored, local only)
 ```
 
@@ -55,9 +54,14 @@ fintrack/
 Three-layer waterfall applied on every import. See `docs/taxonomy.md` for the full category list.
 
 ### Layer 1 — Rules Cache
-`rules.json` maps known merchant keys to `{type, category, subcategory}`. Pattern-matched against the cleaned merchant name. Instant and deterministic for all recurring transactions.
+`rules.json` maps known merchant keys to `{type, category, subcategory}`. Matched against the lowercased, trimmed merchant name using two passes:
+1. **Exact match** — key equals merchant name exactly
+2. **Prefix match** — key starts with merchant name, or merchant name starts with key (bidirectional)
+
+Instant and deterministic for all recurring transactions.
 - `labelling_source = 'rule'`
 - `confidence = null`
+- `reviewed = 1` (rules are pre-trusted; no human sign-off needed)
 
 ### Layer 2 — Ollama LLM Fallback
 For unmatched transactions, sends to local Ollama model with:
@@ -67,7 +71,10 @@ For unmatched transactions, sends to local Ollama model with:
 
 Returns: `{type, category, subcategory, confidence}`.
 - `labelling_source = 'llm'`
+- `reviewed = 0`
 - Transactions below `CONFIDENCE_THRESHOLD` are flagged red in the UI
+
+**If Ollama is unreachable:** the transaction is inserted with all label fields `NULL` and `labelling_source = NULL`. It appears red in the UI. To label it, start Ollama (`ollama serve`) and re-import the same CSV — existing rows are skipped by dedup, unlabelled rows are picked up and labelled.
 
 ### Layer 3 — Human Review
 User clicks any row in the app → one-click relabel → immediate save.
@@ -77,9 +84,11 @@ User clicks any row in the app → one-click relabel → immediate save.
 ### Learning Loop
 After a correction session, "Learn from corrections" triggers:
 1. **Rules cache update:** every human-corrected merchant key is added/overwritten in `rules.json`
-2. **Few-shot bank update:** all human corrections appended to `corrections` table → injected into next LLM prompt
+2. **Few-shot bank update:** new `(merchant, description)` pairs from human corrections are appended to the `corrections` table → the 20 most recent are injected into every Ollama prompt
 
 No model retraining. The LLM gets smarter through better context.
+
+**Note — stale corrections:** the few-shot bank deduplicates on `(merchant, description)`. If a merchant was labelled incorrectly and then corrected, the old wrong entry remains in the `corrections` table if it had the same description. This is a known limitation — it can cause conflicting few-shot examples for the same merchant. Mitigated by the rules cache (which always reflects the latest correct label) taking priority over the LLM.
 
 ---
 

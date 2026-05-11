@@ -1,6 +1,26 @@
 # FinTrack — Category Taxonomy
 
-> Every transaction is assigned one **type** (structural money-flow classification) and one **category + subcategory** (semantic label).
+> Every transaction is assigned one **type**, one **category**, and one **subcategory**.
+
+---
+
+## Data model
+
+The three fields form a hierarchy:
+
+```
+type → category → subcategory
+```
+
+**Expense** is the only type with multiple categories. The other three types (Income, Transfer, Financial Obligation) each have a single category that shares the type's name — this is intentional, keeping the data model uniform without adding a meaningless extra level.
+
+| Type | Category | Subcategory (examples) |
+|------|----------|----------------------|
+| Income | Income | Salary & Bonuses |
+| Expense | Food & Drinks | Restaurants |
+| Expense | Housing & Utilities | Rent |
+| Transfer | Transfer | Savings Deposit |
+| Financial Obligation | Financial Obligation | Loan Repayment |
 
 ---
 
@@ -86,5 +106,15 @@ Four mutually exclusive types cover every possible transaction:
 
 - A transaction has exactly one type, one category, and one subcategory — never multiple.
 - When in doubt between Expense and Financial Obligation: if it's recurring structured debt, use Financial Obligation; if it's a one-off spend, use Expense.
-- Self-transfers between own accounts (KBC checking → KBC savings) are always **Transfer / Transfer / Internal Transfer** for outflows, or auto-typed as **Transfer / Transfer / Savings Deposit** when the destination is a savings account.
 - Income from salary or employer always uses **Income / Income / Salary & Bonuses** regardless of how the bank describes it.
+
+### Self-transfer and savings rules (auto-applied at ingest)
+
+| Scenario | Amount | Label |
+|----------|--------|-------|
+| Savings account CSV — deposit | positive | Transfer / Transfer / Savings Deposit |
+| Savings account CSV — withdrawal | negative | Transfer / Transfer / Internal Transfer |
+| Checking account — outflow to own name | negative | Transfer / Transfer / Internal Transfer |
+| Checking account — inflow from own name | positive | Transfer / Transfer / Internal Transfer |
+
+Both legs of any money movement between your own accounts are always **Transfer**, never Income. This ensures self-transfers cancel out in spending reports.

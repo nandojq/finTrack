@@ -24,6 +24,17 @@ Primary data store. One row per unique bank transaction.
 | `reviewed` | BOOLEAN | `1` once human has confirmed or corrected |
 | `import_batch` | TEXT | Source CSV filename + import timestamp |
 
+### `reviewed` field semantics
+
+| `labelling_source` | Default `reviewed` | Meaning |
+|--------------------|-------------------|---------|
+| `rule` | `1` | Rules are pre-trusted — no sign-off needed |
+| `llm` | `0` | Needs human verification |
+| `human` | `1` | Human explicitly confirmed or corrected |
+| `null` | `0` | Unlabelled (Ollama unreachable at import time) |
+
+The "Unreviewed only" filter in the UI therefore surfaces only LLM-labelled and unlabelled rows — the rows that actually need attention.
+
 ### Deduplication
 
 The `id` hash prevents re-importing the same transaction when CSV exports overlap in date range. `INSERT OR IGNORE` is used on every row — safe to re-import the same file.

@@ -197,24 +197,27 @@ def ingest_csv(csv_path: str) -> dict:
     skipped = 0
 
     for _, row in df.iterrows():
-        # Pre-label savings account transactions
+        # Pre-label savings account transactions — split by direction
         if is_savings:
-            pre_type, pre_cat, pre_sub, pre_src = 'Transfer', 'Transfer', 'Savings Deposit', 'rule'
-        # Pre-label self-transfers on checking account
-        elif row['_self_transfer']:
-            if row['amount'] < 0:
-                pre_type, pre_cat, pre_sub, pre_src = 'Transfer', 'Transfer', 'Internal Transfer', 'rule'
+            if row['amount'] > 0:
+                pre_type, pre_cat, pre_sub = 'Transfer', 'Transfer', 'Savings Deposit'
             else:
-                pre_type, pre_cat, pre_sub, pre_src = 'Income', 'Income', 'Other Income', 'rule'
+                pre_type, pre_cat, pre_sub = 'Transfer', 'Transfer', 'Internal Transfer'
+            pre_src, pre_reviewed = 'rule', 1
+        # Pre-label self-transfers on checking account — both directions are Transfers
+        elif row['_self_transfer']:
+            pre_type, pre_cat, pre_sub = 'Transfer', 'Transfer', 'Internal Transfer'
+            pre_src, pre_reviewed = 'rule', 1
         else:
             pre_type = pre_cat = pre_sub = pre_src = None
+            pre_reviewed = 0
 
         try:
             conn.execute("""
                 INSERT OR IGNORE INTO transactions
                   (id, date, amount, description, merchant, account,
-                   type, category, subcategory, labelling_source, import_batch)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                   type, category, subcategory, labelling_source, reviewed, import_batch)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
                 row['id'],
                 str(row['date']),
@@ -226,6 +229,7 @@ def ingest_csv(csv_path: str) -> dict:
                 pre_cat,
                 pre_sub,
                 pre_src,
+                pre_reviewed,
                 import_batch,
             ))
             if conn.execute("SELECT changes()").fetchone()[0]:

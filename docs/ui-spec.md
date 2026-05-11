@@ -78,7 +78,11 @@ Shown below the table when a row is selected. Two columns:
 
 ## Learn button
 
-Shown at the bottom whenever any human corrections exist (`stats['human'] > 0`).
+Shown at the bottom when either:
+- The DB contains at least one human-labelled transaction (`stats['human'] > 0`), **or**
+- A correction was made in the current session (`has_corrections` session state flag)
+
+The session flag ensures the button appears immediately after the first correction without waiting for the stats cache to refresh.
 
 On click:
 1. Scan all `labelling_source = 'human'` transactions
