@@ -529,6 +529,8 @@ display_cols = ['date', 'merchant', 'amount', 'type', 'category', 'subcategory',
                 'labelling_source', 'confidence', 'reviewed']
 available = [c for c in display_cols if c in df.columns]
 view_df = df[available].copy().reset_index(drop=True)
+if 'date' in view_df.columns:
+    view_df['date'] = pd.to_datetime(view_df['date']).dt.date
 
 st.markdown(f"<p class='section-label'>{len(view_df)} transactions</p>", unsafe_allow_html=True)
 

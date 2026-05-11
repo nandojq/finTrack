@@ -372,8 +372,8 @@
   },
   "analena vater": {
     "type": "Expense",
-    "category": "Shopping",
-    "subcategory": "Electronics & Gadgets"
+    "category": "Food & Drinks",
+    "subcategory": "Takeaway & Delivery"
   },
   "crf exp st josse": {
     "type": "Expense",
@@ -547,8 +547,8 @@
   },
   "rclub schuman": {
     "type": "Expense",
-    "category": "Health & Wellbeing",
-    "subcategory": "Doctor & Specialists"
+    "category": "Groceries & Household",
+    "subcategory": "Personal Care"
   },
   "correcting entry": {
     "type": "Income",
@@ -649,5 +649,365 @@
     "type": "Expense",
     "category": "Food & Drinks",
     "subcategory": "Restaurants"
+  },
+  "pure rose": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Other Shopping"
+  },
+  "comedie claude volter": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "www.ledossard.com": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Events"
+  },
+  "avolta tenerife sur wt": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Other Shopping"
+  },
+  "enis ben chahed": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "mr leonardo pallanca": {
+    "type": "Income",
+    "category": "Income",
+    "subcategory": "Refunds & Reimbursements"
+  },
+  "vueling airlines": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "boulangerie selimiye": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "ssp-tfs": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "hotel royal park albat": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "e.s.cepsa abades": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "parkia trinidad tna": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "k sofi": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "alehop137 tnf la lagun": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Clothing & Accessories"
+  },
+  "papagayo": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "el ventorrillo": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "autogrill belgie nv": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "uniqlo porte de namur": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Clothing & Accessories"
+  },
+  "alcoba azul barcino": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "petrolis collblanc 193": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "platillo volador": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "delijn 8lnyhhrk 24apr": {
+    "type": "Expense",
+    "category": "Transportation",
+    "subcategory": "Public Transport"
+  },
+  "farmacia erika ruiz": {
+    "type": "Expense",
+    "category": "Health & Wellbeing",
+    "subcategory": "Pharmacy"
+  },
+  "ok mobility barcelona": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "mobile locker belgium": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Other Shopping"
+  },
+  "sumup **mike lewis ent gbe28et london with google pay 5127 88xx xxxx 0292 virtual card number for contactless: 5354 00xx xxxx 7609 cardholder: jorge ques fernando": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Arts & Culture"
+  },
+  "arkose canal bru": {
+    "type": "Expense",
+    "category": "Health & Wellbeing",
+    "subcategory": "Gym & Sports"
+  },
+  "tc zaventem": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "decathlon evere": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Other Shopping"
+  },
+  "name-cheap.com* tkiutd": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Other Shopping"
+  },
+  "studio baxton": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Electronics & Gadgets"
+  },
+  "fod justitie": {
+    "type": "Financial Obligation",
+    "category": "Financial Obligation",
+    "subcategory": "Fines"
+  },
+  "guido fortenio p2p mobile with kbc brussels debit card 5127 88xx xxxx 0292 cardholder: jorge ques fernando": {
+    "type": "Expense",
+    "category": "Health & Wellbeing",
+    "subcategory": "Doctor & Specialists"
+  },
+  "ls bar du marche": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "my tannour merode": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "be creative by schleip": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Arts & Culture"
+  },
+  "pom-synlab belgium": {
+    "type": "Expense",
+    "category": "Health & Wellbeing",
+    "subcategory": "Doctor & Specialists"
+  },
+  "hotel on booking.com": {
+    "type": "Expense",
+    "category": "Leisure & Entertainment",
+    "subcategory": "Travel & Holidays"
+  },
+  "ca nela": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "shades world": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Other Shopping"
+  },
+  "coses bones": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "cachivache palma": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Arts & Culture"
+  },
+  "bar alena": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "gist": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "seven bank aichi jp with kbc brussels debit card 5127 88xx xxxx 0292": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "grab and fly term a": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "cafe belga": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "carrefour elsene": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "paypal *riconova": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Arts & Culture"
+  },
+  "athenee": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "mantra": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "planchette": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "q8 109703 nossegem ind": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "forcado": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "musee horta": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Arts & Culture"
+  },
+  "visit.brussels": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Arts & Culture"
+  },
+  "puori eu": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Personal Care"
+  },
+  "le botanique": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Arts & Culture"
+  },
+  "3102 colruyt roodebeek": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "menma": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "jourdan lt sprl": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "canaletto caffe": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "les ambassades": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "les cheminots": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "simi": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "la pointe drouot": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "mala boom": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Restaurants"
+  },
+  "ep reunion musees nat": {
+    "type": "Expense",
+    "category": "Shopping",
+    "subcategory": "Arts & Culture"
+  },
+  "darani distribution": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
+  },
+  "dose lamarck": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "de blauwe kater": {
+    "type": "Expense",
+    "category": "Food & Drinks",
+    "subcategory": "Cafés & Bars"
+  },
+  "esso heverlee-city": {
+    "type": "Expense",
+    "category": "Groceries & Household",
+    "subcategory": "Supermarket"
   }
 }
