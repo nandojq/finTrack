@@ -441,9 +441,13 @@ with st.sidebar:
     st.subheader("Filters")
 
     today = date.today()
-    first_of_this_month = today.replace(day=1)
-    prev_month_end = first_of_this_month - timedelta(days=1)
-    default_from = prev_month_end.replace(day=1)
+    try:
+        conn = get_conn()
+        earliest = conn.execute("SELECT MIN(date) FROM transactions").fetchone()[0]
+        conn.close()
+        default_from = date.fromisoformat(earliest) if earliest else today.replace(day=1)
+    except Exception:
+        default_from = today.replace(day=1)
     date_from = st.date_input("From", value=default_from)
     date_to   = st.date_input("To",   value=today)
 

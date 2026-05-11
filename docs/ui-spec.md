@@ -13,7 +13,7 @@ Streamlit app (`app.py`). Single-page layout with sidebar controls.
 - Supports multiple KBC accounts (checking, savings). Savings account transactions auto-typed as Transfer / Savings Deposit at ingest time.
 
 ### Filters
-- **Period:** date range picker (From / To), defaults to previous full month
+- **Period:** date range picker (From / To), defaults to earliest transaction in the DB → today (shows all data on first open)
 - **Type:** multi-select of all transaction types
 - **Source:** multi-select of `rule` / `llm` / `human` / `(unlabelled)`
 - **Reviewed toggle:** show unreviewed only
