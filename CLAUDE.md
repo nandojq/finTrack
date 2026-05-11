@@ -24,15 +24,15 @@ Full specification lives in `docs/`:
 ```
 KBC CSV Export
       ↓
- ingest.py → normalise → deduplicate → DB insert
+ src/ingest.py → normalise → deduplicate → DB insert
       ↓
- labeller.py → rules.json cache → Ollama LLM fallback (few-shot corrections)
+ src/labeller.py → rules.json cache → Ollama LLM fallback (few-shot corrections)
       ↓
  fintrack.db (SQLite)
       ↓
- app.py (Streamlit) → table view → row detail → relabel → Learn button
+ src/app.py (Streamlit) → table view → row detail → relabel → Learn button
       ↓
- learner.py → update rules.json + corrections table
+ src/learner.py → update rules.json + corrections table
 ```
 
 ---

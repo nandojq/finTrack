@@ -40,7 +40,7 @@ ollama serve
 ollama pull llama3.2
 
 # 4. Run the app
-streamlit run app.py
+streamlit run src/app.py
 ```
 
 ---

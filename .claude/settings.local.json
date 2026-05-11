@@ -2,13 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(python -c *)",
-      "Bash(python ingest.py *)",
-      "Bash(python labeller.py)",
-      "Bash(streamlit run app.py)",
+      "Bash(python src/ingest.py *)",
+      "Bash(python src/labeller.py)",
+      "Bash(streamlit run src/app.py)",
       "Bash(sqlite3 fintrack.db *)",
       "mcp__claude_ai_Notion__notion-fetch",
       "mcp__claude_ai_Notion__notion-update-page",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git mv *)",
+      "Bash(ls *)"
     ]
   }
 }

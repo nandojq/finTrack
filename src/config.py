@@ -5,10 +5,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Paths — always absolute, relative to this file
-_BASE = Path(__file__).parent
-DB_PATH = str(_BASE / "fintrack.db")
-RULES_PATH = str(_BASE / "rules.json")
+# Paths — always absolute; src/ is one level below the project root
+_ROOT = Path(__file__).parent.parent
+DB_PATH = str(_ROOT / "fintrack.db")
+RULES_PATH = str(_ROOT / "rules.json")
 
 # Ollama LLM
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434/api/generate")

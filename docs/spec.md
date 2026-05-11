@@ -35,15 +35,16 @@ KBC CSV Export (one or more accounts)
 
 ```
 fintrack/
-├── app.py              # Streamlit UI — single entrypoint
-├── ingest.py           # KBC CSV parser, normaliser, deduplicator, DB writer
-├── labeller.py         # Labelling engine: rules cache → Ollama LLM fallback
-├── learner.py          # "Learn" process: update rules.json + corrections table
-├── config.py           # Taxonomy, Ollama config, paths — loads from .env
+├── src/
+│   ├── app.py          # Streamlit UI — single entrypoint
+│   ├── ingest.py       # KBC CSV parser, normaliser, deduplicator, DB writer
+│   ├── labeller.py     # Labelling engine: rules cache → Ollama LLM fallback
+│   ├── learner.py      # "Learn" process: update rules.json + corrections table
+│   └── config.py       # Taxonomy, Ollama config, paths — loads from .env
+├── docs/               # Full specification (this folder)
 ├── rules.json          # Merchant → type/category/subcategory cache
 ├── .env                # Secrets and personal config (never committed)
 ├── .env.example        # Template for .env
-├── docs/               # Full specification (this folder)
 └── fintrack.db         # SQLite database (gitignored, local only)
 ```
 
